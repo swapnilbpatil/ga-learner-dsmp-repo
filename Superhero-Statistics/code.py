@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 data=pd.read_csv(path)
 #Code starts here 
 replace=data['Gender'].replace("-","Agender",inplace=True)
-gender_count=data["Gender"].value_counts()
+gender_count = data["Gender"].value_counts()
 #IMP(.index,gender_count)
 plt.bar(gender_count.index,gender_count)
 plt.show()
@@ -15,7 +15,7 @@ plt.show()
 
 # --------------
 #Code starts here
-alignment=data["Alignment"].value_counts()
+alignment = data["Alignment"].value_counts()
 print(alignment)
 plt.pie(alignment,labels=alignment)
 plt.title('Character Alignment')
