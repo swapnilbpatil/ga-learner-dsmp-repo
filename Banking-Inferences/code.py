@@ -116,6 +116,7 @@ critical_value = stats.chi2.ppf(q = 0.95, # Find the critical value for 95% conf
                       df = 6)   # Df = number of variable categories(in purpose) - 1
 
 #Code starts here
+
 yes = data[data['paid.back.loan'] == 'Yes']['purpose'].value_counts()
 
 no = data[data['paid.back.loan'] == 'No']['purpose'].value_counts()
