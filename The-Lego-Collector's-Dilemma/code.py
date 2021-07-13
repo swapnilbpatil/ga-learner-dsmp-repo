@@ -50,6 +50,7 @@ X_test.drop(['play_star_rating','val_star_rating'],axis = 1 ,inplace=True)
 
 
 # --------------
+
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
