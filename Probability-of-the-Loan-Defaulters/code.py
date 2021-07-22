@@ -27,7 +27,7 @@ prob_pd_cs = new_df[new_df['credit.policy'] == 'Yes'].shape[0]/new_df.shape[0]
 #Calculate the conditional probability
 bayes = (prob_pd_cs * prob_lp )/prob_cs
 print(bayes)
-
+# code ends here
 
 
 
