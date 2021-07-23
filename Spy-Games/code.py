@@ -1,4 +1,5 @@
 # --------------
+#Code starts here
 ##File path for the file 
 file_path 
 def read_file(path):
@@ -8,10 +9,9 @@ def read_file(path):
     return sentence
 sample_message=str (read_file(file_path))
 print(sample_message)
-#Code starts here
-
-
 # --------------
+
+
 #Code starts here
 message_1=read_file(file_path_1)
 message_2=read_file(file_path_2)
@@ -22,11 +22,8 @@ def fuse_msg(message_a,message_b):
     return str(quotient)
 secret_msg_1= fuse_msg(message_1,message_2)
 print(secret_msg_1)    
-
-
-
-
 # --------------
+
 #Code starts here
 message_3=read_file(file_path_3)
 print(message_3)
@@ -40,10 +37,10 @@ def substitute_msg(message_c):
     return sub
 secret_msg_2=substitute_msg(message_3)
 print(secret_msg_2)
-
-
-
 # --------------
+
+
+
 # File path for message 4  and message 5
 file_path_4
 file_path_5
