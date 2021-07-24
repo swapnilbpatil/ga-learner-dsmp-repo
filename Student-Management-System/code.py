@@ -29,15 +29,12 @@ mathematics= {'Geoffrey Hinton':78,'Andrew Ng':95,'Sebastian Raschka':65,'Yoshua
 topper=max(mathematics,key = mathematics.get)
 print(topper)
 
-
 # Code ends here  
 
 
 # --------------
 # Given string
 topper = 'andrew ng'
-
-
 # Code starts here
 print(topper)
 last_name=topper.split()[1]
@@ -45,8 +42,6 @@ first_name=topper.split()[0]
 full_name=(last_name +" "+ first_name)
 certificate_name=full_name.upper()
 print(certificate_name)
-
-
 # Code ends here
 
 
