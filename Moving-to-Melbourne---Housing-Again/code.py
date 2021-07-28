@@ -1,4 +1,5 @@
 # --------------
+
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -23,11 +24,6 @@ print(corr)
 
 
 
-
-
-
-
-
 # --------------
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
@@ -41,11 +37,6 @@ print(r2)
 
 
 
-
-
-
-
-
 # --------------
 from sklearn.linear_model import Lasso
 
@@ -55,7 +46,6 @@ lasso.fit(X_train,y_train)
 lasso_pred = lasso.predict(X_test)
 r2_lasso = lasso.score(X_test,y_test)
 print(r2_lasso)
-
 
 
 
@@ -75,9 +65,8 @@ ridge_pred = ridge.predict(X_test)
 #the r^2 score
 r2_ridge = ridge.score(X_test,y_test)
 print(r2_ridge)
-
-
 # Code ends here
+
 
 
 # --------------
@@ -93,6 +82,7 @@ score = cross_val_score(regressor,X_train,y_train,scoring = 'r2',cv=10)
 mean_score = np.mean(score)
 print(mean_score)
 
+# Code ends here
 
 
 # --------------
@@ -112,6 +102,7 @@ y_pred = model.predict(X_test)
 r2_poly = model.score(X_test,y_test)
 print(r2_poly)
 
+# Code ends here
 
 
 
